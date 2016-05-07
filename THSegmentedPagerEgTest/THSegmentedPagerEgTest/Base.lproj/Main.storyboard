@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMO-BF-Pmf" customClass="HMSegmentedControl">
+                                <rect key="frame" x="0.0" y="20" width="600" height="66"/>
+                                <color key="backgroundColor" red="0.42601254109999998" green="0.56350226150000005" blue="0.83334189970000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="iAT-lH-d9X"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2c-rL-5j1">
+                                <rect key="frame" x="0.0" y="86" width="600" height="514"/>
+                                <color key="backgroundColor" red="0.53396561899999995" green="0.74323268310000001" blue="0.65888852200000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kMO-BF-Pmf" secondAttribute="trailing" id="1NY-hu-iWn"/>
+                            <constraint firstAttribute="trailing" secondItem="X2c-rL-5j1" secondAttribute="trailing" id="9Fv-oZ-KJw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X2c-rL-5j1" secondAttribute="bottom" id="HbH-nN-5na"/>
+                            <constraint firstItem="kMO-BF-Pmf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lar-bP-GCx"/>
+                            <constraint firstItem="X2c-rL-5j1" firstAttribute="top" secondItem="kMO-BF-Pmf" secondAttribute="bottom" id="Lik-Au-5oV"/>
+                            <constraint firstItem="kMO-BF-Pmf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="UQQ-8q-hIu"/>
+                            <constraint firstItem="X2c-rL-5j1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dj4-JB-XMg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentContainer" destination="X2c-rL-5j1" id="BaH-z8-ms2"/>
+                        <outlet property="pageControl" destination="kMO-BF-Pmf" id="vRH-Zv-RA8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469" y="216"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="N7H-MP-kCS">
+            <objects>
+                <viewController storyboardIdentifier="THSegmentedPager" id="hn5-c4-ePQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YPW-83-zeS"/>
+                        <viewControllerLayoutGuide type="bottom" id="PHU-dZ-5TA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="URz-kg-2Kc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gif-Fi-hiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="216"/>
+        </scene>
+    </scenes>
+</document>
